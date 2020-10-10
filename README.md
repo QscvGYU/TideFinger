@@ -1,4 +1,4 @@
-<div align=center><img src=images/logo.png width=30% ></div>
+﻿<div align=center><img src=images/logo.png width=30% ></div>
 
 
 # TideFinger
@@ -26,11 +26,9 @@ https://github.com/TideSec/TideFinger
 
 1、识别脚本的安装和使用都比较简单。
 
-安装python2依赖库
+安装python3依赖库
 ```
-pip install lxml
-pip install requests
-pip install bs4
+requirement.txt
 
 说明：sqlite3库在Python 2.5.x 以上版本默认自带了该模块，如提示sqlite3出错请自行排查。
 ```
@@ -39,11 +37,11 @@ pip install bs4
 ```
 $ python TideFinger.py
 
-    Usage: python TideFinger.py -u http://www.123.com [-p 1] [-m 50] [-t 5]
+    Usage: python TideFinger.py -u http://www.123.com [-p 1] [-s 50] [-t 5]
 
     -u: 待检测目标URL地址
     -p: 指定该选项为1后，说明启用代理检测，请确保代理文件名为proxys_ips.txt,每行一条代理，格式如: 124.225.223.101:80
-    -m: 指纹匹配的线程数，不指定时默认为50
+    -s: 指纹匹配的线程数，不指定时默认为50
     -t: 网站响应超时时间，默认为5秒
 ```
 
